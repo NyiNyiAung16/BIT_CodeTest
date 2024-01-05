@@ -24,7 +24,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/user',function(){
     $user = auth()->user();
     if($user){
-        dd($user);
         return $user;
     }else{
         return null;
